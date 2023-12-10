@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Tesla Biography Webpage">
+   <meta name="keywords" content="Tesla, Biography, Webpage, task">
+   <title>Nikola Tesla (1856-1943):</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!--Maksym Sovyk Student Number : 8919121-->
+   <div class="wrapper">
+      <header class="header">
+         <h1>Nicola tesla</h1>
+      </header>
+      <section class="toggle__webpages">
+         <ul id="webpages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="media.html">Media</a></li>
+         </ul>
+         <h2 class="contact__title">Write to us</h2>
+      </section>
+      <main>
+            
+         <form action="#" method="post" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name:" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email:" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter a 10-digit phone number" required>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color" value="#000000">
+
+            <label for="department">Department:</label><br>
+            <select id="department" name="department" required>
+               <option value="" disabled selected>Select Department</option>
+               <option value="engineering">Engineering</option>
+               <option value="research">Research</option>
+               <option value="marketing">Marketing</option>
+               <option value="other">Other</option>
+            </select><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message:" required></textarea>
+
+            <button type="submit">Send Message</button>
+         </form>
+      </main>
+   
+      <footer class="footer">
+            <p>
+               &copy; Maksym Sovyk 2023
+            </p>
+      </footer>
+
+
+   </div>
+</body>
+</html>
